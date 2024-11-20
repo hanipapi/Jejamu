@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* PAlLETE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--white);
+}
+
+:root {
+    --primary-color: #DBA979;
+    --primary-color-dark: #ECCA9C;
+    --secondary-color: #FFF2E1;
+    --text-color: #333333;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+
+/* ================ Index Style ============= */
+.bg-image {
+    background: url('asset/homebg.png') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+
+header {
+    margin: auto;
+    padding: 1rem;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+header h1 a {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+nav .nav__btn {
+    padding: 0.5rem 2rem;
+    color: var(--white) !important;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+nav .nav__btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    min-height: calc(100vh - 100px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__container h1 {
+    font-size: 2.5rem;
+    font-weight: 450;
+    line-height: 3.5rem;
+    color: var(--primary-color-dark);
+    margin-bottom: 1rem;
+}
+
+.heading__1 {
+    font-weight: 700;
+}
+
+.heading__2 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.content__container p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.content__container form {
+    display: flex;
+    align-items: center;
+}
+
+.content__container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    font-size: 0.8rem;
+    outline: none;
+    border: none;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content__container button {
+    width: fit-content;
+    padding: 1rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    color: var(--white);
+    outline: none;
+    border: none;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.content__container button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* Halaman 2 */
+
+
+/* Halaman 3 */
+.testimoni-section {
+    background-color: #f8f9fa;
+}
+
+.text-center {
+    text-align: center !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.testimonial h5 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial p.title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    text-align: left;
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #3366cc;
+}
+
+/* ============== Login Style ================== */
+
+.box {
+    margin: 16px auto;
+    max-width: 980px;
+}
+
+.box-content {
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+    min-height: 600px;
+    background-color: var(--secondary-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .05);
+    display: flex;
+}
+
+.colo {
+    padding: 30px;
+}
+
+.box__left {
+    width: 55%;
+}
+
+.box__right {
+    width: 45%;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('asset/login2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 220px;
+}
+
+.box__left-title {
+    margin-top: 50px;
+}
+
+.box__left-title h4 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box__left-form form .box__left-form-group {
+    margin-bottom: 15px;
+}
+
+.box__left-form form .input-form input {
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--white);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    background-image: linear-gradient(to left, var(--primary-color), var(--primary-color-dark));
+    background-size: 200%;
+    transition: all .3s linear;
+}
+
+.btn-login:hover {
+    background-position: right;
+}
+
+.text__right h1 {
+    color: var(--text-color);
+    font-size: 28px;
+}
+
+/*============= Akun.php ==============*/
+
+.box {
+    margin: 16px auto;
+    max-width: 980px;
+}
+
+.col {
+    flex: 1;
+    padding: 30px;
+    border-right: 1px solid #ccc;
+}
+
+.col:last-child {
+    border-right: none;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.judul h4 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    border: 1px solid #131212;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.teks-tengah {
+    text-align: center;
+}
+
+.tombol-login {
+    display: inline-block;
+    width: 200px;
+    padding: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--white);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    background-image: linear-gradient(to left, var(--primary-color), var(--primary-color-dark));
+    background-size: 200%;
+    transition: all .3s linear;
+}
+
+.tombol-login:hover {
+    background-position: right;
+}
+
+/*=========== About Me ===============*/
+
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--primary-color-dark);
+}
+
+.about-card {
+    background-color: var(--primary-color-dark);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.subtitle {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--primary-color-dark);
+}
+
+.developers {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.developer {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.developer-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.developer-name {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.developer-role {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.developer-bio {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.developer-links a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+.developer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Daftar Akun ========== */
+.col1 {
+    flex: 1;
+    padding: 30px;
+    border-right: 1px solid #ccc;
+}
+
+/* ====== Foto Halaman Produk ========== */
+.poto {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.poto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*  ====== DETAIL.PHP ========== */
